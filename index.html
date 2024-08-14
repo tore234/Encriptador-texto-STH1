@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__informaciones">
+            <div class="container__texto">
+                <h1>Encriptador de Texto</h1>
+                <p class="texto__parrafo">Ingresa el texto que deseas encriptar o desencriptar:</p>
+            </div>
+            <textarea id="textoUsuario" class="container__input" rows="4" placeholder="Escribe aquí..."></textarea>
+            <div class="container__botones">
+                <button onclick="encriptarTexto();" class="container__boton">Encriptar</button>
+                <button onclick="desencriptarTexto();" class="container__boton">Desencriptar</button>
+            </div>
+            <div class="container__resultado">
+                <h2 class="container__texto container__texto-azul">Resultado:</h2>
+                <p id="textoResultado" class="texto__parrafo"></p>
+            </div>
+        </div>
+        <img src="./img/ava.png" alt="Imagen decorativa" class="container__imagen-persona" />
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
